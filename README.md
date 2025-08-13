@@ -44,7 +44,7 @@ Application web moderne pour rechercher et explorer les profils GitHub avec une 
 4. **Naviguer** entre profils d'un simple clic
 5. **Partager** des profils via le bouton de copie
 
-## ⚡ Fonctionnalités avancées
+##  Fonctionnalités avancées
 
 - **Cache intelligent** : Historique persistant en localStorage
 - **API optimisée** : Gestion des limites GitHub API
