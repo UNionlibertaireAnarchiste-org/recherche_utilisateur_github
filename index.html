@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://avatars.githubusercontent.com; connect-src https://api.github.com; style-src 'self' 'unsafe-inline';">
     <link rel="stylesheet" href="style.css">
-    <title>Recherche GitHub Sécurisée</title>
+    <title>Recherche GitHub</title>
 </head>
 <body>
     <h1>GitHub Research</h1>
@@ -13,10 +13,28 @@
     <form class="form-github-recherche">
         <div class="search-container">
             <input type="text" class="inp-search" placeholder="Search for a user" maxlength="39" pattern="[a-zA-Z0-9\-]+" required>
+            <select class="language-filter">
+                <option value="">All languages</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="TypeScript">TypeScript</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+                <option value="Go">Go</option>
+                <option value="Rust">Rust</option>
+            </select>
             <button type="submit">Search</button>
         </div>
     </form>
 
+    <div class="search-history" style="display: none;">
+        <h3>Historique des recherches</h3>
+        <div class="history-items"></div>
+        <button class="clear-history">Effacer l'historique</button>
+    </div>
+    
     <div class="loading" style="display: none;">Searching...</div>
     <div class="resultat"></div>
 
