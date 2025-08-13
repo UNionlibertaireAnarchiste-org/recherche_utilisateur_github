@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://avatars.githubusercontent.com; connect-src https://api.github.com; style-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="style.css">
+    <title>Recherche GitHub Sécurisée</title>
+</head>
+<body>
+    <h1>GitHub Research</h1>
+    
+    <form class="form-github-recherche">
+        <div class="search-container">
+            <input type="text" class="inp-search" placeholder="Search for a user" maxlength="39" pattern="[a-zA-Z0-9\-]+" required>
+            <button type="submit">Search</button>
+        </div>
+    </form>
+
+    <div class="loading" style="display: none;">Searching...</div>
+    <div class="resultat"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
